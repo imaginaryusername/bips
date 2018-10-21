@@ -40,7 +40,7 @@ Please note that this proposal DOES NOT propose a [[https://gist.github.com/gavi
 
 ** The new maximum block size calculation will take place at the end of ConnectBlock(), so enforcement of the new maximum block size consensus rule will take place on the next block received.
 ** Using a pre-sorted list of the last 12,960 blocks' and 52,560 blocks' sizes (about three months and one year of blocks respectively)
-** each median * 10 (2 is the growth multiplier), the larger number is the new maximum block size consensus.
+** each median * 10 (10 is the growth multiplier), the larger number is the new maximum block size consensus.
 ** If the larger median is less than 32,000,000 bytes, then 32,000,000 bytes is used as the maximum block size until next calculation. Note: the current maximum block size consensus rule is 32,000,000 bytes. 
 ** If the larger median is higher than 10,000,000,000,000 bytes (10TB), 10TB is used as the maximum block size until next calculation.
 
