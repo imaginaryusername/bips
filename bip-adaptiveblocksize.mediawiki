@@ -12,6 +12,7 @@
 
 
 We propose a dynamic limit to the block size based on the the **largest** number out of the following: 
+
 1. Median block size over the last 12,960 blocks (about three months) multiplied by 10 and calculated when a block is connected to the blockchain.
 
 2. Median block size over the last 52,560 blocks (about one year) multiplied by 10 and calculated when a block is connected to the blockchain.
